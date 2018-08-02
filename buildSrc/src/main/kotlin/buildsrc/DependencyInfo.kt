@@ -14,7 +14,7 @@ object DependencyInfo {
   val okHttpMockServer = okHttp("mockwebserver")
 
   const val assertJCore = "org.assertj:assertj-core:3.9.1"
-  const val guava = "com.google.guava:guava:24.1-jre"
+  const val guava = "com.google.guava:guava:26.0-jre"
   const val javapoet = "com.squareup:javapoet:$javapoetVersion"
   const val mockito = "org.mockito:mockito-core:2.18.0"
   const val mockitoKotlin = "com.nhaarman:mockito-kotlin:1.5.0"
