@@ -17,7 +17,7 @@ object DependencyInfo {
   const val guava = "com.google.guava:guava:26.0-jre"
   const val javapoet = "com.squareup:javapoet:$javapoetVersion"
   const val mockito = "org.mockito:mockito-core:2.18.0"
-  const val mockitoKotlin = "com.nhaarman:mockito-kotlin:1.5.0"
+  const val mockitoKotlin = "com.nhaarman:mockito-kotlin:1.6.0"
   val junitPlatformRunner = junitPlatform("runner")
   val junitJupiterApi = junitJupiter("api")
   val junitJupiterEngine = junitJupiter("engine")
