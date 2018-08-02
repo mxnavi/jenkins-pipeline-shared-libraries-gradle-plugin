@@ -26,7 +26,8 @@ For each release, a subsection should be added for each of the following if they
 
 === Changed
 
-* Built with Gradle 4.8 and Kotlin DSL Plugin 0.17.5
+* Built with Gradle 4.9 and Kotlin DSL Plugin 0.18.1
+* Dependency version updates
 
 == 0.6.2 (2018/04/12)
 

@@ -2,12 +2,12 @@ package buildsrc
 
 @Suppress("UNUSED", "MemberVisibilityCanBePrivate")
 object DependencyInfo {
-  const val javapoetVersion = "1.10.0"
-  const val okHttpVersion = "3.10.0"
-  const val kotlinLoggingVersion = "1.5.4"
+  const val javapoetVersion = "1.11.1"
+  const val okHttpVersion = "3.11.0"
   const val junitPlatformVersion = "1.2.0"
   const val junitJupiterVersion = "5.2.0"
   const val junit5Log4jVersion = "2.11.1"
+  const val kotlinLoggingVersion = "1.5.8"
   const val slf4jVersion = "1.7.25"
 
   val okHttpClient = okHttp("okhttp")

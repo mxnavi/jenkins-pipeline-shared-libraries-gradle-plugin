@@ -29,7 +29,6 @@ import java.nio.file.SimpleFileVisitor
 import java.nio.file.StandardCopyOption
 import java.nio.file.attribute.BasicFileAttributes
 import java.util.Optional
-import java.util.logging.Logger
 import java.util.stream.Stream
 import kotlin.reflect.jvm.kotlinFunction
 
@@ -50,6 +49,7 @@ internal class MultiVersionGradleProjectTestTemplate : TestTemplateInvocationCon
         GradleVersion.version("4.6"),
         GradleVersion.version("4.7"),
         GradleVersion.version("4.8"),
+        GradleVersion.version("4.9"),
         GradleVersion.current()
       )
     }
@@ -68,8 +68,8 @@ internal class MultiVersionGradleProjectTestTemplate : TestTemplateInvocationCon
         }
       }
       .map { gradleVersions -> gradleVersions.map { GradleProjectInvocationContext(context.displayName, it) } }
-      .map {
-        it.stream().distinct()
+      .map { contexts ->
+        contexts.stream().distinct()
           .map {
             // Needed because of https://github.com/junit-team/junit5/issues/1226
             it as TestTemplateInvocationContext
