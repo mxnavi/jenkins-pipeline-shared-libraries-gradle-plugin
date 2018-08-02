@@ -19,7 +19,7 @@ plugins {
   `java-gradle-plugin`
   id("com.gradle.plugin-publish") version "0.9.10"
   id("com.github.ben-manes.versions") version "0.20.0"
-  id("org.jetbrains.dokka") version "0.9.16"
+  id("org.jetbrains.dokka") version "0.9.17"
   // TODO: load version from shared location
   // Only used for local publishing for testing
   `maven-publish`
